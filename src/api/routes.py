@@ -21,4 +21,4 @@ def create_animal():
     new_animal = Animals(name = body['name'], url = body['url'], description = body['description'])
     db.session.add(new_animal)
     db.session.commit()
-    return jsonify({'user': new_animal.serialize()}), 200
+    return jsonify({'animal': new_animal.serialize()}), 200

@@ -1,3 +1,66 @@
-/* 
-    General Styles used on every website (Don't Repeat Yourself)
-*/
+body {
+  background-image: url('https://images.unsplash.com/photo-1557683304-673a23048d34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1700&q=80');
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh; /* Agregar esta línea */
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  margin: auto;
+  max-width: 1400px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.tarjeta {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.671);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.texto {
+     padding: 20px;
+     text-align: center;
+}
+
+.texto .name {
+    font-size: 20px;
+    font-weight: 700;
+}
+.texto .description {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.footer {
+     background-color: rgba(0, 0, 0, 0.514);
+    margin-top: 40px;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.459);
+}
