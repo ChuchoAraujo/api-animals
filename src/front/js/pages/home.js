@@ -46,6 +46,7 @@ export const Home = () => {
 			})
 			.catch((error) => console.log("error", error));
 	};
+
 	
 
 
@@ -58,7 +59,6 @@ export const Home = () => {
 					<input value={description} onChange={(e) => setDescription(e.target.value)} className="form-control m-2" placeholder="Agrega una descripción" />
 					<input value={url} onChange={(e) => setUrl(e.target.value)} className="form-control m-2" placeholder="Pega una url" />
 					<button onClick={handleAddAnimal} className="btn btn-warning m-3">Agregar animal</button>
-					
 				</form>
 			</div>
 			
